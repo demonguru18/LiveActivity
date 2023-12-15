@@ -1,0 +1,16 @@
+PODS:
+  - LiveActivity (0.1.0)
+
+DEPENDENCIES:
+  - LiveActivity (from `../`)
+
+EXTERNAL SOURCES:
+  LiveActivity:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LiveActivity: 6a24e19e01809d7d550eabf63f4566ac86677819
+
+PODFILE CHECKSUM: 0d2d109417005716ebaa31b3f59a448f09f2639d
+
+COCOAPODS: 1.12.1

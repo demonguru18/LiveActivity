@@ -1,0 +1,6 @@
+framework module Pods_LiveActivity_Example {
+  umbrella header "Pods-LiveActivity_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
