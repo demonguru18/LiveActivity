@@ -10,6 +10,7 @@ import WidgetKit
 import SwiftUI
 
 struct Widget_LiveActivityAttributes: ActivityAttributes {
+    public typealias LiveActivityData = ContentState
     public struct ContentState: Codable, Hashable {
         // Dynamic stateful properties about your activity go here!
         var emoji: String
@@ -71,10 +72,10 @@ extension Widget_LiveActivityAttributes.ContentState {
          Widget_LiveActivityAttributes.ContentState(emoji: "🤩")
      }
 }
-
-#Preview("Notification", as: .content, using: Widget_LiveActivityAttributes.preview) {
-   Widget_LiveActivityLiveActivity()
-} contentStates: {
-    Widget_LiveActivityAttributes.ContentState.smiley
-    Widget_LiveActivityAttributes.ContentState.starEyes
-}
+//
+//#Preview("Notification", as: .content, using: Widget_LiveActivityAttributes.preview) {
+//   Widget_LiveActivityLiveActivity()
+//} contentStates: {
+//    Widget_LiveActivityAttributes.ContentState.smiley
+//    Widget_LiveActivityAttributes.ContentState.starEyes
+//}
