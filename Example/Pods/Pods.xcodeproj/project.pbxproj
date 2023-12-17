@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,10 +13,16 @@
 		4DD04D88216D4D618B92689F75C7AE53 /* Pods-LiveActivity_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D73656C6B152D277140659F69E547E8E /* Pods-LiveActivity_Example-dummy.m */; };
 		655405C1E6693DA574E5B2E6FF940F3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		74F3801965416D641900E4E0842D1C07 /* LiveActivity-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FC5C64C56636E264FFD3CF606B698149 /* LiveActivity-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7624749CF54FC468220ADC255F642205 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A884BA4B0EF3DC9C45323B4565E376 /* ReplaceMe.swift */; };
 		767FF3AAF7382F51A644E70571CF4378 /* Pods-LiveActivity_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B22D6784C42732F82E0931B151070A96 /* Pods-LiveActivity_Tests-dummy.m */; };
 		8A85D324DAE6260F242D35993ECB4F59 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		B8479E756B7EF1EB952C95C6060A38DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		F105D5E82B2D50DD0001E38A /* Widget_LiveActivityBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F105D5E72B2D50DD0001E38A /* Widget_LiveActivityBundle.swift */; };
+		F105D5EA2B2D50DD0001E38A /* Widget_LiveActivityLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F105D5E92B2D50DD0001E38A /* Widget_LiveActivityLiveActivity.swift */; };
+		F105D5EE2B2D50DF0001E38A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F105D5ED2B2D50DF0001E38A /* Assets.xcassets */; };
+		F105D5F32B2D51280001E38A /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F105D5E42B2D50DD0001E38A /* SwiftUI.framework */; };
+		F105D5F42B2D51280001E38A /* SwiftUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F105D5E42B2D50DD0001E38A /* SwiftUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F105D5F62B2D512A0001E38A /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F105D5E22B2D50DD0001E38A /* WidgetKit.framework */; };
+		F105D5F72B2D512A0001E38A /* WidgetKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F105D5E22B2D50DD0001E38A /* WidgetKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +42,21 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		F105D5F52B2D51280001E38A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F105D5F42B2D51280001E38A /* SwiftUI.framework in Embed Frameworks */,
+				F105D5F72B2D512A0001E38A /* WidgetKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0197F6B83F2DA869A4A2862E92D79FAC /* LiveActivity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LiveActivity.release.xcconfig; sourceTree = "<group>"; };
 		025A1B2DD2292FFFAF58DC72A09CDBB9 /* Pods-LiveActivity_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LiveActivity_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -45,7 +66,6 @@
 		2654EB4A2A727256F5CDE426E01E1630 /* Pods-LiveActivity_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LiveActivity_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		328974D74246C33E67F1F027FDDB3718 /* Pods-LiveActivity_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LiveActivity_Tests-umbrella.h"; sourceTree = "<group>"; };
 		40F6BA8298353F9318DB1D92AD54D919 /* Pods-LiveActivity_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LiveActivity_Tests.modulemap"; sourceTree = "<group>"; };
-		47A884BA4B0EF3DC9C45323B4565E376 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = LiveActivity/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		54B84062FC5298206FA7AAB2FB9AC857 /* Pods-LiveActivity_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LiveActivity_Tests-Info.plist"; sourceTree = "<group>"; };
 		56CE44845C5433AEB302728CFE593505 /* Pods-LiveActivity_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LiveActivity_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		5AEC7ADD8C8568D4B9D905B281DFEA50 /* LiveActivity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LiveActivity.debug.xcconfig; sourceTree = "<group>"; };
@@ -57,7 +77,7 @@
 		7CB7B61497346CCAB79E89F5093A9AC0 /* Pods-LiveActivity_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LiveActivity_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		7E69EB09859426415F845077A95700D8 /* LiveActivity-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LiveActivity-Info.plist"; sourceTree = "<group>"; };
 		8ABA0C4B89CF6FFAE610B7EB3CE8C382 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		8BFE7B975B03AE0EF9EBD6FDB50CA4BB /* Pods-LiveActivity_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-LiveActivity_Tests"; path = Pods_LiveActivity_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BFE7B975B03AE0EF9EBD6FDB50CA4BB /* Pods_LiveActivity_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LiveActivity_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		96DEF005168289F0999FF449C7C8F3F8 /* Pods-LiveActivity_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LiveActivity_Example-Info.plist"; sourceTree = "<group>"; };
 		9B3071842A9ABB5267B1CFC3EDD857FA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -65,10 +85,18 @@
 		A4806DFAC00A5F0275175FCA627215C8 /* Pods-LiveActivity_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LiveActivity_Example.modulemap"; sourceTree = "<group>"; };
 		AAFC348C09220F335E0D2A58A25A530D /* Pods-LiveActivity_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LiveActivity_Example-umbrella.h"; sourceTree = "<group>"; };
 		B22D6784C42732F82E0931B151070A96 /* Pods-LiveActivity_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LiveActivity_Tests-dummy.m"; sourceTree = "<group>"; };
-		BF70CB3371D4162DCF892763FC7FD895 /* Pods-LiveActivity_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-LiveActivity_Example"; path = Pods_LiveActivity_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF70CB3371D4162DCF892763FC7FD895 /* Pods_LiveActivity_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LiveActivity_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D73656C6B152D277140659F69E547E8E /* Pods-LiveActivity_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LiveActivity_Example-dummy.m"; sourceTree = "<group>"; };
 		D9223D85F9A6A9C9D4E6752F457DB5B4 /* Pods-LiveActivity_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LiveActivity_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		DF184286E9AD72FBACC8BCC041F8D4AE /* LiveActivity */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LiveActivity; path = LiveActivity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF184286E9AD72FBACC8BCC041F8D4AE /* LiveActivity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LiveActivity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F105D5E12B2D50DD0001E38A /* Widget-LiveActivityExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Widget-LiveActivityExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F105D5E22B2D50DD0001E38A /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		F105D5E42B2D50DD0001E38A /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		F105D5E72B2D50DD0001E38A /* Widget_LiveActivityBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Widget_LiveActivityBundle.swift; sourceTree = "<group>"; };
+		F105D5E92B2D50DD0001E38A /* Widget_LiveActivityLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Widget_LiveActivityLiveActivity.swift; sourceTree = "<group>"; };
+		F105D5ED2B2D50DF0001E38A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F105D5EF2B2D50DF0001E38A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F105D6052B2D5EF40001E38A /* Widget-LiveActivityExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Widget-LiveActivityExtension.entitlements"; sourceTree = "<group>"; };
 		FC5C64C56636E264FFD3CF606B698149 /* LiveActivity-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LiveActivity-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,6 +122,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8479E756B7EF1EB952C95C6060A38DA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F105D5DE2B2D50DD0001E38A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F105D5F32B2D51280001E38A /* SwiftUI.framework in Frameworks */,
+				F105D5F62B2D512A0001E38A /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,7 +167,7 @@
 		51C8BB7C3508237CD7778AFF8BDF890A /* LiveActivity */ = {
 			isa = PBXGroup;
 			children = (
-				47A884BA4B0EF3DC9C45323B4565E376 /* ReplaceMe.swift */,
+				F19502392B2D4E0C0073BD53 /* Source */,
 				234877EEFA9270C228A37BA4BE9C86A6 /* Pod */,
 				8834D7BB808F0CC9A0FFE38582AD2671 /* Support Files */,
 			);
@@ -197,6 +234,7 @@
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
+				F105D6052B2D5EF40001E38A /* Widget-LiveActivityExtension.entitlements */,
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				611CD6C30A0FA58D7CAFEEC37C7E297C /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
@@ -209,6 +247,8 @@
 			isa = PBXGroup;
 			children = (
 				578452D2E740E91742655AC8F1636D1F /* iOS */,
+				F105D5E22B2D50DD0001E38A /* WidgetKit.framework */,
+				F105D5E42B2D50DD0001E38A /* SwiftUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -216,11 +256,31 @@
 		DB8D3EFDA173CBA59E8B201C4F28DB7D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DF184286E9AD72FBACC8BCC041F8D4AE /* LiveActivity */,
-				BF70CB3371D4162DCF892763FC7FD895 /* Pods-LiveActivity_Example */,
-				8BFE7B975B03AE0EF9EBD6FDB50CA4BB /* Pods-LiveActivity_Tests */,
+				DF184286E9AD72FBACC8BCC041F8D4AE /* LiveActivity.framework */,
+				BF70CB3371D4162DCF892763FC7FD895 /* Pods_LiveActivity_Example.framework */,
+				8BFE7B975B03AE0EF9EBD6FDB50CA4BB /* Pods_LiveActivity_Tests.framework */,
+				F105D5E12B2D50DD0001E38A /* Widget-LiveActivityExtension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		F105D5E62B2D50DD0001E38A /* Widget-LiveActivity */ = {
+			isa = PBXGroup;
+			children = (
+				F105D5E72B2D50DD0001E38A /* Widget_LiveActivityBundle.swift */,
+				F105D5E92B2D50DD0001E38A /* Widget_LiveActivityLiveActivity.swift */,
+				F105D5ED2B2D50DF0001E38A /* Assets.xcassets */,
+				F105D5EF2B2D50DF0001E38A /* Info.plist */,
+			);
+			path = "Widget-LiveActivity";
+			sourceTree = "<group>";
+		};
+		F19502392B2D4E0C0073BD53 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				F105D5E62B2D50DD0001E38A /* Widget-LiveActivity */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,7 +328,7 @@
 			);
 			name = LiveActivity;
 			productName = LiveActivity;
-			productReference = DF184286E9AD72FBACC8BCC041F8D4AE /* LiveActivity */;
+			productReference = DF184286E9AD72FBACC8BCC041F8D4AE /* LiveActivity.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		53F589AF9EAA8C8EA3BE2A4116A1C571 /* Pods-LiveActivity_Tests */ = {
@@ -287,7 +347,7 @@
 			);
 			name = "Pods-LiveActivity_Tests";
 			productName = Pods_LiveActivity_Tests;
-			productReference = 8BFE7B975B03AE0EF9EBD6FDB50CA4BB /* Pods-LiveActivity_Tests */;
+			productReference = 8BFE7B975B03AE0EF9EBD6FDB50CA4BB /* Pods_LiveActivity_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		D11716B4FFFE299857101FC10AC7C7E6 /* Pods-LiveActivity_Example */ = {
@@ -306,8 +366,26 @@
 			);
 			name = "Pods-LiveActivity_Example";
 			productName = Pods_LiveActivity_Example;
-			productReference = BF70CB3371D4162DCF892763FC7FD895 /* Pods-LiveActivity_Example */;
+			productReference = BF70CB3371D4162DCF892763FC7FD895 /* Pods_LiveActivity_Example.framework */;
 			productType = "com.apple.product-type.framework";
+		};
+		F105D5E02B2D50DD0001E38A /* Widget-LiveActivityExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F105D5F22B2D50DF0001E38A /* Build configuration list for PBXNativeTarget "Widget-LiveActivityExtension" */;
+			buildPhases = (
+				F105D5DD2B2D50DD0001E38A /* Sources */,
+				F105D5DE2B2D50DD0001E38A /* Frameworks */,
+				F105D5DF2B2D50DD0001E38A /* Resources */,
+				F105D5F52B2D51280001E38A /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Widget-LiveActivityExtension";
+			productName = "Widget-LiveActivityExtension";
+			productReference = F105D5E12B2D50DD0001E38A /* Widget-LiveActivityExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -315,8 +393,14 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1300;
-				LastUpgradeCheck = 1300;
+				BuildIndependentTargetsInParallel = YES;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					F105D5E02B2D50DD0001E38A = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -334,6 +418,7 @@
 				4A2248ECEC96B73632D17B7383CC4DBB /* LiveActivity */,
 				D11716B4FFFE299857101FC10AC7C7E6 /* Pods-LiveActivity_Example */,
 				53F589AF9EAA8C8EA3BE2A4116A1C571 /* Pods-LiveActivity_Tests */,
+				F105D5E02B2D50DD0001E38A /* Widget-LiveActivityExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -360,6 +445,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F105D5DF2B2D50DD0001E38A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F105D5EE2B2D50DF0001E38A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -376,7 +469,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B2C509F523F99502B7D3CBB03EE301E /* LiveActivity-dummy.m in Sources */,
-				7624749CF54FC468220ADC255F642205 /* ReplaceMe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,6 +477,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DD04D88216D4D618B92689F75C7AE53 /* Pods-LiveActivity_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F105D5DD2B2D50DD0001E38A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F105D5E82B2D50DD0001E38A /* Widget_LiveActivityBundle.swift in Sources */,
+				F105D5EA2B2D50DD0001E38A /* Widget_LiveActivityLiveActivity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,27 +512,35 @@
 			baseConfigurationReference = 5AEC7ADD8C8568D4B9D905B281DFEA50 /* LiveActivity.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/LiveActivity/LiveActivity-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/LiveActivity/LiveActivity-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MODULEMAP_FILE = "Target Support Files/LiveActivity/LiveActivity.modulemap";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				PRODUCT_MODULE_NAME = LiveActivity;
 				PRODUCT_NAME = LiveActivity;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -442,27 +551,35 @@
 			baseConfigurationReference = 0197F6B83F2DA869A4A2862E92D79FAC /* LiveActivity.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/LiveActivity/LiveActivity-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/LiveActivity/LiveActivity-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MODULEMAP_FILE = "Target Support Files/LiveActivity/LiveActivity.modulemap";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				PRODUCT_MODULE_NAME = LiveActivity;
 				PRODUCT_NAME = LiveActivity;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -475,20 +592,25 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-LiveActivity_Example/Pods-LiveActivity_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-LiveActivity_Example/Pods-LiveActivity_Example.modulemap";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -496,7 +618,10 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -508,20 +633,25 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-LiveActivity_Tests/Pods-LiveActivity_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-LiveActivity_Tests/Pods-LiveActivity_Tests.modulemap";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -529,7 +659,10 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -570,6 +703,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -585,12 +719,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -602,20 +736,25 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-LiveActivity_Tests/Pods-LiveActivity_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-LiveActivity_Tests/Pods-LiveActivity_Tests.modulemap";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -623,7 +762,10 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -636,20 +778,25 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-LiveActivity_Example/Pods-LiveActivity_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-LiveActivity_Example/Pods-LiveActivity_Example.modulemap";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -657,7 +804,10 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -699,6 +849,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -717,18 +868,103 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
+		};
+		F105D5F02B2D50DF0001E38A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_ENTITLEMENTS = "Widget-LiveActivityExtension.entitlements";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Widget-LiveActivity/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Widget-LiveActivity";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Techhowdy.Widget-LiveActivity";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F105D5F12B2D50DF0001E38A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_ENTITLEMENTS = "Widget-LiveActivityExtension.entitlements";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Widget-LiveActivity/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Widget-LiveActivity";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Techhowdy.Widget-LiveActivity";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -765,6 +1001,15 @@
 			buildConfigurations = (
 				787784BA9D75FCDC38C9609D86989815 /* Debug */,
 				9D637E73196966E0BD63C0FA2382932E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F105D5F22B2D50DF0001E38A /* Build configuration list for PBXNativeTarget "Widget-LiveActivityExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F105D5F02B2D50DF0001E38A /* Debug */,
+				F105D5F12B2D50DF0001E38A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
